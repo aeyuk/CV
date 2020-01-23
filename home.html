@@ -20,14 +20,15 @@ h1 {
   margin: 0 auto;
   letter-spacing:.15em;
   animation: 
-          typing 3.5s steps(40, end),
+          typing 2.5s steps(40, end),
           blink-caret .75s step-end infinite;
   font-family: "Ubuntu Mono", monospace;
+  animation-fill-mode: forwards;
 }
 
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 50% }
 }
 
 @keyframes blink-caret {
@@ -51,6 +52,7 @@ background-repeat: no-repeat; ">
 
 <!-- Page Container -->
 <div style="min-height: 100%; margin-bottom: -50px">
+  <div class="w3-block"></div>
   <div class="w3-block" style="text-align: center;">
     <h1 style="font-size:100px; color: white">Cate Yuk</h1>
   </div>
