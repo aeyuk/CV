@@ -6,16 +6,42 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link href="https://fonts.googleapis.com/css?family=Sarabun" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono&display=swap" rel="stylesheet">
 <style>
+
 A {text-decoration: none;}
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Sarabun", sans-serif}
+
+html,body,h2,h3,h4,h5,h6 {font-family: "Sarabun", sans-serif}
+
+h1 {
+  overflow: hidden;
+  border-right: .15em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing:.15em;
+  animation: 
+          typing 3.5s steps(40, end),
+          blink-caret .75s step-end infinite;
+  font-family: "Ubuntu Mono", monospace;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  25% { border-color: white; }
+}
+
 </style>
 <body class="w3-grey" style="height:100%; background-image: url(pictures/bean.jpg); background-size: cover;
 background-repeat: no-repeat; ">
 
 
 <!-- Nav Bar -->
-<nav class="w3-card w3-container w3-light-gray w3-center w3-margin-bottom w3-margin-top w3-rest">
+<nav class="w3-card w3-container w3-white w3-center w3-margin-bottom w3-margin-top w3-rest">
   <h4 style="text-align: right">
       <a href="home.html"><i style="padding-right: 30px" class="fa fa-home w3-hover-opacity"></i></a>
       <a class="w3-hover-opacity" href="aboutme.html" style="padding-right: 30px">About Me</a>
@@ -25,8 +51,8 @@ background-repeat: no-repeat; ">
 
 <!-- Page Container -->
 <div style="min-height: 100%; margin-bottom: -50px">
-  <div class="w3-block w3-rest w3-animate-fading" style="text-align: center; transform:inherit">
-    <h1 style="font-size:200px; color: white">Cate Yuk</h1>
+  <div class="w3-block" style="text-align: center;">
+    <h1 style="font-size:100px; color: white">Cate Yuk</h1>
   </div>
   <div style="text-align: center;">
     <h6 style="font-size:25px; color: white"><b>Hello! I am a junior at the University of Alabama</b></h6> 
@@ -36,7 +62,7 @@ background-repeat: no-repeat; ">
 <!-- End Page Container -->
 </div>
 
-<footer style="height: 70px" class="w3-card w3-container w3-light-gray w3-center w3-margin-top w3-margin-bottom w3-rest">
+<footer style="height: 70px" class="w3-card w3-container w3-white w3-center w3-margin-top w3-margin-bottom w3-rest">
   <h6><b>Find me!</b></h6>
       GitHub  <a href="https://github.com/aeyuk"><i class="fa fa-github w3-hover-opacity"></i></a>  &nbsp • &nbsp  
       Linkedin  <a href="https://www.linkedin.com/in/anne-cate-yuk-577538156/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
